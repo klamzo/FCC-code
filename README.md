@@ -3,6 +3,7 @@ This is to keep track of my Free Code Camp exercices.
 
 
 ===== This is the counting cards exercice ==== 
+
 function cc(card) {
   // Only change code below this line
   switch(card) {
