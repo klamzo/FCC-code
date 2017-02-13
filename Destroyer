@@ -1,0 +1,15 @@
+function destroyer(arr) {
+  
+  var arg1 = Array.prototype.slice.call(arguments[0]),
+      arg2 = Array.prototype.slice.call(arguments, 1);
+  
+  function takeOut(item) {
+    return arg2.indexOf(item) == -1;
+  }
+  
+  // Remove all the values
+  arr = arg1.filter(takeOut);
+  return arr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
